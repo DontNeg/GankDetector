@@ -1,1 +1,9 @@
 *.env
+
+# intellij files
+**/out/
+.idea/
+*.iml 
+*.ipr 
+*.iws
+*.class

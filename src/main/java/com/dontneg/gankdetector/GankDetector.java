@@ -13,7 +13,7 @@ public class GankDetector {
     public GankDetector(){}
 
     public static void main(String[] args){
-        Dotenv config = Dotenv.configure().load();
+        Dotenv config = Dotenv.configure().directory("C:\\Users\\iTempura\\Desktop\\GankDetectorStandalone\\.env").load();
         String token = config.get("TOKEN");
         JDABuilder builder = JDABuilder.createDefault(token)
                 .setStatus(OnlineStatus.ONLINE)
