@@ -29,7 +29,7 @@ public class GankListener extends ListenerAdapter {
     @Override
     public void onSlashCommandInteraction(SlashCommandInteractionEvent event) {
         this.event = event;
-        String path = "C:/Users/iTempura/Documents/GankDetector/src/main/java/com/dontneg/gankdetector/list/";
+        String path = "../list/";
         final Path listPath = Path.of(path + "gankerslist.txt");
         switch(event.getName().toLowerCase()){
             case "addguild" -> {
